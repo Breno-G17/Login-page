@@ -55,7 +55,7 @@ form {
   }
 }
 
-#username-field,
+#email-field,
 #password-field {
   padding: 8px 12px;
   height: 100%;
@@ -69,6 +69,27 @@ form {
     font-weight: 500;
   }
 }
+
+.wrapper-input {
+  position: relative;
+  margin: 10px 0;
+
+  #email-error, 
+  #password-error {
+    position: absolute;
+    bottom: 12px;
+    width: 1rem;
+    font-size: 14px;
+    color: #ff0000;
+    text-align: center;
+  }
+
+  i {
+    font-size: 1.3rem;
+    color: seagreen
+  }
+}
+
 
 button {
   padding: 10px 14px;

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Login page</title>
 </head>
@@ -27,23 +28,36 @@
         </div>
 
         <div class="form-item" id="user">
-          <label for="user">enter your or email:</label>
+          <label for="user">enter your email:</label>
           <span class="material-symbols-outlined">
             mail
-            </span>
-            <input type="text" name="user" id="username-field"
-            placeholder="your email">
+          </span>
+
+          <div class="wrapper-input">
+
+            <input type="email" name="user" id="email-field"
+            placeholder="your email" onkeyup="validateEmail()">
+
+            <span id="email-error"></span>
+            
+          </div>
         </div>
 
         <div class="form-item" id="password">
-          <label for="password">Your password:</label>
+          <label for="password">Enter your password:</label>
           <span class="material-symbols-outlined">
             password
-            </span>
-          <input type="password" name="password" id="password-field" placeholder="your password">
+          </span>
+          <div class="wrapper-input">
+
+            <input type="password" name="password" id="password-field" placeholder="your password" onkeyup="validatePassword()">
+
+            <span id="password-error"></span>
+
+          </div>
         </div>
 
-        <button type="submit">Log In</button>
+        <button>Log In</button>
 
       </form>
 
