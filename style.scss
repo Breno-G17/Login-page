@@ -8,7 +8,6 @@
 }
 
 body {
-  background-color: #00DBDE;
   background-image: linear-gradient(109deg, #00DBDE 0%, #9500ff 100%);
 
   height: 100vh;
@@ -40,7 +39,6 @@ body {
 
 form {
   display: block;
-  flex-direction: column;
   text-align: center;
   gap: 1rem;
   justify-content: space-between;
@@ -143,4 +141,19 @@ footer {
     text-decoration: none;
   }
 
+}
+
+
+@media  (min-width <= 768px) {
+  body {
+    background-image: #00DBDE;
+    max-width: 90%;
+    height: 40vh;
+  }
+
+  .login-card {
+    max-height: 90%;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 1);
+  }
 }
